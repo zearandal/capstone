@@ -4,10 +4,13 @@
   <head>
     <meta charset="UTF-8">
     <!--<title> Responsive Sidebar Menu  | CodingLab </title>-->
-    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/dashboard.css">
     <!-- Boxicons CDN Link -->
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="\capstoneTeletubbies\css\evo-calendar.min.css"/>
+    <link rel="stylesheet" href="\capstoneTeletubbies\css\evo-calendar.midnight-blue.min.css"/>
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
    </head>
 <body>
   <div class="sidebar">
@@ -71,9 +74,25 @@
      </li>
     </ul>
   </div>
+
   <section class="home-section">
-      <div class="text">Dashboard</div>
+
+        <div id="calendar"></div>
+
   </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+    <script src="\capstoneTeletubbies\js\evo-calendar.min.js"></script>
+
+    <script>
+    // initialize your calendar, once the page's DOM is ready
+    $(document).ready(function() {
+        $('#calendar').evoCalendar({
+          theme: "Midnight Blue",
+        })
+    })
+    </script>
+
   <script>
   let sidebar = document.querySelector(".sidebar");
   let closeBtn = document.querySelector("#btn");
