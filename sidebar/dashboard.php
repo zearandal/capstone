@@ -2,6 +2,7 @@
 <!-- Created by CodingLab |www.youtube.com/CodingLabYT-->
 <html lang="en" dir="ltr">
   <head>
+    	<title>Calendar Dashboard</title>
     <meta charset="UTF-8">
     <!--<title> Responsive Sidebar Menu  | CodingLab </title>-->
     <link rel="stylesheet" href="../css/dashboard.css">
@@ -26,6 +27,13 @@
           <span class="links_name">Dashboard</span>
         </a>
          <span class="tooltip">Dashboard</span>
+      </li>
+      <li>
+        <a href="..\sidebar\event.php">
+          <i class='bx bx-alarm-add' ></i>
+          <span class="links_name">Add Event</span>
+        </a>
+        <span class="tooltip">Add Event</span>
       </li>
       <li>
        <a href="..\sidebar\phonebook.php">
@@ -55,13 +63,6 @@
        </a>
        <span class="tooltip">Saved</span>
      </li>
-     <li>
-       <a href="..\sidebar\setting.php">
-         <i class='bx bx-cog' ></i>
-         <span class="links_name">Setting</span>
-       </a>
-       <span class="tooltip">Setting</span>
-     </li>
      <li class="profile">
          <div class="profile-details">
            <!--<img src="profile.jpg" alt="profileImg">-->
@@ -89,6 +90,23 @@
     $(document).ready(function() {
         $('#calendar').evoCalendar({
           theme: "Midnight Blue",
+          calendarEvents: [
+     {
+       id: 'bHay68s', // Event's ID (required)
+       name: "New Year", // Event name (required)
+       date: "January/13/2022", // Event date (required)
+       type: "holiday", // Event type (required)
+       everyYear: true // Same event every year (optional)
+     },
+     {
+       name: "Vacation Leave",
+       badge: "02/13 - 02/15", // Event badge (optional)
+       date: ["February/13/2022", "February/15/2022"], // Date range
+       description: "Vacation leave for 3 days.", // Event description (optional)
+       type: "event",
+       color: "#63d867" // Event custom color (optional)
+     }
+   ]
         })
     })
     </script>
