@@ -29,6 +29,13 @@
          <span class="tooltip">Dashboard</span>
       </li>
       <li>
+        <a href="..\sidebar\event.php">
+          <i class='bx bx-alarm-add' ></i>
+          <span class="links_name">Add Event</span>
+        </a>
+        <span class="tooltip">Add Event</span>
+      </li>
+      <li>
        <a href="#">
          <i class='bx bx-user' ></i>
          <span class="links_name">Phonebook</span>
@@ -55,13 +62,6 @@
          <span class="links_name">Saved</span>
        </a>
        <span class="tooltip">Saved</span>
-     </li>
-     <li>
-       <a href="..\sidebar\setting.php">
-         <i class='bx bx-cog' ></i>
-         <span class="links_name">Setting</span>
-       </a>
-       <span class="tooltip">Setting</span>
      </li>
      <li class="profile">
          <div class="profile-details">
